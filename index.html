@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    /* * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    } */
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: .12em;
+        word-spacing: .2em;
+        font-weight: 700;
+        margin: 50px 0 30px 0;
+    }
+
+    body {
+        background-color: #05c46b;
+        font-family: 'Times New Roman', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    form {
+        width: 550px;
+        margin: 0 auto;
+        background-color: rgba(251, 249, 246, 0.8);
+        padding: 30px 25px;
+        border-radius: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], select[name="description"] {
+        border: 1px solid #777;
+        padding: 9px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .radio-box label, .check-input label {
+        font-size: 17px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+
+    button {
+        background-color: #05c46b !important;
+        width: 100%;
+    }
+
+
+    @media (max-width: 425px) {
+        
+        form {
+            width: 95%;
+        }
+    }
+</style>
+<body>
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center">
+                <h1>Andela Survey Form</h1>
+            </div>
+            <!-- form-section -->
+            <form action="" class="">
+                <div class="input-box mb-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="" name="name" placeholder="enter your name">
+                </div>
+                
+
+                <div class="input-box mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="" name="email" placeholder="name@example.com">
+                </div>
+                
+
+                <div class="input-box mb-4">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="" name="age" placeholder="enter your age">
+                </div>
+               
+                <!-- drop down options -->
+                <div class="input-box mb-4">
+                    <label for="description" class="form-label">What option best describes you?</label>
+                    <select name="description" id="" class="form-control">
+                        <option value="Student">Select an option</option>
+                        <option value="Student">Student</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Professional">Professional</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <!-- radio button -->
+                <div class="input-box mb-4">
+                    <label for="recommend"  value="recommend" class="form-label">Would you recommend Andela to a friend?</label>
+                    
+                    <div class="radio-box">
+                        <input type="radio" class="ms-3" id="" name="recommend" value="">
+                        <label for="recommend" class="ms-1">Yes</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" class="ms-3" id="" name="recommend" value="">
+                        <label for="recommend" class="ms-1">No</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" class="ms-3" id="" name="recommend" value="">
+                        <label for="recommend" class="ms-1">Maybe</label>
+                    </div>
+                </div>
+
+                <!-- check-box -->
+                <div class="input-box mb-4">
+                    <label for="" class="form-label">Languages and Frameworks known <span>(Check all that apply)</span></label>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">C</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">C++</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">C#</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">Java</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">Python</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">JavaScript</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">React</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">Angular</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">Django</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">Node js</label>
+                    </div>
+                    <div class="check-input">
+                        <input type="checkbox"  class="ms-3">
+                        <label for=""  class="ms-1">Vue</label>
+                    </div>
+                </div>
+
+
+                <!-- comments -->
+                <div class="input-box mb-4">
+                    <label for="comments" class="form-label">Any comments or suggestions</label>
+                    <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                </div>
+
+                <div>
+                    <button type="button" value="submit" class="btn">Submit</button>
+
+                    <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+                </div>
+                 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
